@@ -1,0 +1,1 @@
+creating a ec2 instance of type t2.medium to execute the roboshop project
