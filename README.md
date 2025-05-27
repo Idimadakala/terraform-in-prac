@@ -24,6 +24,12 @@ terraform backend: Defines where terraform stores it's .tfstate(state) file.
                   -> Terraform usually stores in aws s3
                   -> This backend supports state locking via DynamoDB
 
+data block request 
+data "terraform_remote_state" "vpc"{
 
+}
+terraform import : can import already existing infra resources
+                  -> allows you to import existing resource under Terraform management
+                  
 
   
