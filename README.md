@@ -126,7 +126,11 @@ resource "aws_subnet" "vpc-a-private-subnet"{
 terraform backend: 
 Defines where terraform stores it's .tfstate(state) file.
 -> Terraform usually stores in aws s3
--> This backend supports state locking via DynamoDB
+-> This backend supports state locking via DynamoDB or use s3 for state locking (encrypt=true, use_lockfile=true)
+
+
+ Data sources (via the data tag) retrieve the data of existing, external resources; 
+ where Resources (via the resource tag) are used to configure resources.
 
 data block request 
 data "terraform_remote_state" "vpc"{
